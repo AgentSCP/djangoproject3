@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel='stylesheet' href="./style.css">
+</head>
+<body>
+    <h1>{{ header }}</h1>
+    <h2>{{ user.name }} {{ user.name }}</h2>
+    <p>Знает языки программирования: {{ langs.2 }}</p>
+    {% for lang in langs %}
+        <p>{{ lang }}</p>
+    {% endfor %}
+    <p>Адрес: улица {{ address.0}}, дом {{ address.1 }}6 кв. {{address.2}}</p>
+</body>
+</html>
